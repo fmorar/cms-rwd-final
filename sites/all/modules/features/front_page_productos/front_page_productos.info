@@ -51,3 +51,7 @@ features[variable][] = menu_parent_front_page_productos
 features[variable][] = node_options_front_page_productos
 features[variable][] = node_preview_front_page_productos
 features[variable][] = node_submitted_front_page_productos
+features_exclude[field_base][field_generos] = field_generos
+features_exclude[field_base][field_img_book] = field_img_book
+features_exclude[field_instance][node-front_page_productos-field_generos] = node-front_page_productos-field_generos
+features_exclude[field_instance][node-front_page_productos-field_img_book] = node-front_page_productos-field_img_book
