@@ -10,6 +10,26 @@
 function global_config_menu_default_menu_links() {
   $menu_links = array();
 
+  // Exported menu link: main-menu_categorias:<nolink>
+  $menu_links['main-menu_categorias:<nolink>'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => '<nolink>',
+    'router_path' => '<nolink>',
+    'link_title' => 'categorias',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'categorias',
+      ),
+      'identifier' => 'main-menu_categorias:<nolink>',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 1,
+    'weight' => 0,
+    'customized' => 1,
+  );
   // Exported menu link: management_taxonomy:admin/structure/taxonomy
   $menu_links['management_taxonomy:admin/structure/taxonomy'] = array(
     'menu_name' => 'management',
@@ -35,6 +55,7 @@ function global_config_menu_default_menu_links() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Taxonomy');
+  t('categorias');
 
   return $menu_links;
 }
