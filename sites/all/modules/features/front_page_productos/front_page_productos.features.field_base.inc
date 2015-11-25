@@ -107,34 +107,61 @@ function front_page_productos_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_generos'
-  $field_bases['field_generos'] = array(
+  // Exported field_base: 'field_gender'
+  $field_bases['field_gender'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_generos',
+    'field_name' => 'field_gender',
     'indexes' => array(
-      'format' => array(
-        0 => 'format',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'taxonomy',
     'settings' => array(
-      'max_length' => 255,
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'categorias',
+          'parent' => 0,
+        ),
+      ),
     ),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_img_book'
-  $field_bases['field_img_book'] = array(
+  // Exported field_base: 'field_image_slider'
+  $field_bases['field_image_slider'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_img_book',
+    'field_name' => 'field_image_slider',
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'image',
+    'settings' => array(
+      'default_image' => 0,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'image',
+  );
+
+  // Exported field_base: 'field_image_slider_a'
+  $field_bases['field_image_slider_a'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_image_slider_a',
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
