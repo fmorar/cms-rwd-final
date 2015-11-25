@@ -9,10 +9,10 @@
  */
 function global_config_taxonomy_default_vocabularies() {
   return array(
-    'categorias' => array(
-      'name' => 'Categorias',
-      'machine_name' => 'categorias',
-      'description' => '',
+    'tags' => array(
+      'name' => 'Tags',
+      'machine_name' => 'tags',
+      'description' => 'Use tags to group articles on similar topics into categories.',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
