@@ -51,8 +51,8 @@ h1, h2, h3, h4, h5, h6 {
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 14px;
-  font-size: 1.4rem; }
+  font-size: 18px;
+  font-size: 1.8rem; }
 
 th, td {
   padding: 0.5em; }
@@ -133,6 +133,8 @@ input[type="submit"] {
   padding: 8px 25px;
   width: 100%;
   margin-bottom: 10px;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   @media screen and (min-width: 767px) {
     input[type="submit"] {
@@ -159,4 +161,5 @@ input[type="submit"] {
 
 .webform-component {
   margin-bottom: 15px; }
+
 /*# sourceMappingURL=style.css.map */

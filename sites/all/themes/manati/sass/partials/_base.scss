@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 table {
   width: 100%;
   border-collapse: collapse;
-  @include font-size(14);
+  @include font-size(18);
 }
 
 th, td {
