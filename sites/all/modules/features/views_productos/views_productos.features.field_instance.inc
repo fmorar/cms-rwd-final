@@ -73,7 +73,7 @@ function views_productos_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 0,
+      'weight' => 3,
     ),
   );
 

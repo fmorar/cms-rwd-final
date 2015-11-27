@@ -4,6 +4,7 @@ package = ecommerse
 dependencies[] = ds
 dependencies[] = features
 dependencies[] = front_page_productos
+dependencies[] = global_config
 dependencies[] = image
 dependencies[] = menu
 dependencies[] = strongarm

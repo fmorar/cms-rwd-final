@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the views-high feature.
+ */
+
+include_once 'views_high_products.features.inc';

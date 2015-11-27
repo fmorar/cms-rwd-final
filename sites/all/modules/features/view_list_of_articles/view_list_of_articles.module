@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the view_list-of articles feature.
+ */
+
+include_once 'view_list_of_articles.features.inc';
