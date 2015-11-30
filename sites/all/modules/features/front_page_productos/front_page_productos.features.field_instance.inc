@@ -366,11 +366,8 @@ function front_page_productos_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 7,
       ),
       'full' => array(
@@ -473,7 +470,7 @@ function front_page_productos_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
@@ -611,14 +608,14 @@ function front_page_productos_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'fivestar',
         'settings' => array(
           'expose' => TRUE,
           'style' => 'average',
           'text' => 'average',
           'widget' => array(
-            'fivestar_widget' => NULL,
+            'fivestar_widget' => 'default',
           ),
         ),
         'type' => 'fivestar_formatter_default',
