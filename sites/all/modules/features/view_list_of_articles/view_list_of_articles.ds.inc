@@ -26,7 +26,11 @@ function view_list_of_articles_ds_layout_settings_info() {
     'fields' => array(
       'field_category' => 'ds_content',
     ),
-    'classes' => array(),
+    'classes' => array(
+      'layout_class' => array(
+        '' => '',
+      ),
+    ),
     'wrappers' => array(
       'ds_content' => 'div',
     ),

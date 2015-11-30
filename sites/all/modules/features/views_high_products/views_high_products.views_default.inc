@@ -40,12 +40,17 @@ function views_high_products_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'reladed-products max-content';
   /* Field: Content: images-book */
   $handler->display->display_options['fields']['field_images_book']['id'] = 'field_images_book';
   $handler->display->display_options['fields']['field_images_book']['table'] = 'field_data_field_images_book';
   $handler->display->display_options['fields']['field_images_book']['field'] = 'field_images_book';
   $handler->display->display_options['fields']['field_images_book']['label'] = '';
   $handler->display->display_options['fields']['field_images_book']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_images_book']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_images_book']['element_wrapper_class'] = 'reladed-products max-content';
   $handler->display->display_options['fields']['field_images_book']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_images_book']['settings'] = array(
     'image_style' => '',

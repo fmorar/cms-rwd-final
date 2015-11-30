@@ -26,7 +26,6 @@ features[field_instance][] = paragraphs_item-slider_info-field_precio_
 features[field_instance][] = paragraphs_item-slider_info-field_title_slide
 features[flexslider_optionset][] = slider_home
 features[image][] = img-slide-home
-features[menu_links][] = navigation_slide-home:node/add/slide-home
 features[node][] = slide_home
 features[paragraphs][] = slider_info
 features[variable][] = comment_anonymous_slide_home

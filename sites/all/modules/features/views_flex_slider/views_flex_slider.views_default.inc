@@ -78,6 +78,8 @@ function views_flex_slider_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = '<none>';
   $export['slideshow_homepage'] = $view;
 
   return $export;

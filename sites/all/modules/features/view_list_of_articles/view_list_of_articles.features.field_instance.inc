@@ -52,7 +52,16 @@ function view_list_of_articles_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'hidden',
         'module' => 'paragraphs',
         'settings' => array(
           'view_mode' => 'full',
