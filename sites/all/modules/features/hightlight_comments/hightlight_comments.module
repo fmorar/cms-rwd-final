@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the hightlight_comments feature.
+ */
+
+include_once 'hightlight_comments.features.inc';

@@ -44,6 +44,11 @@ function front_page_productos_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_images_book' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
   );
   $export['node|front_page_productos|full'] = $ds_fieldsetting;
 
@@ -151,7 +156,6 @@ function front_page_productos_ds_layout_settings_info() {
         4 => 'field_video_book',
         5 => 'related_item',
         6 => 'comments',
-        7 => 'field_related_products',
       ),
     ),
     'fields' => array(
@@ -162,7 +166,6 @@ function front_page_productos_ds_layout_settings_info() {
       'field_video_book' => 'footer',
       'related_item' => 'footer',
       'comments' => 'footer',
-      'field_related_products' => 'footer',
     ),
     'classes' => array(
       'layout_class' => array(

@@ -19,10 +19,9 @@ function front_page_productos_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -72,7 +71,7 @@ function front_page_productos_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -120,7 +119,7 @@ function front_page_productos_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -176,7 +175,7 @@ function front_page_productos_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 5,
+        'weight' => 3,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -243,7 +242,7 @@ function front_page_productos_field_default_field_instances() {
           'title_source' => '',
         ),
         'type' => 'juicebox_formatter',
-        'weight' => 6,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -306,7 +305,7 @@ function front_page_productos_field_default_field_instances() {
           'video_style' => 'normal',
         ),
         'type' => 'video_embed_field',
-        'weight' => 4,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'hidden',

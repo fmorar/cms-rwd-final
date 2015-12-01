@@ -1,0 +1,11 @@
+name = hightlight_comments
+core = 7.x
+package = ecommerse
+dependencies[] = ds
+dependencies[] = views
+features[ctools][] = ds:ds:1
+features[ctools][] = views:views_default:3.0
+features[ds_fields][] = hightlight_comments
+features[features_api][] = api:2
+features[views_view][] = hightlight_comments
+features_exclude[dependencies][ctools] = ctools

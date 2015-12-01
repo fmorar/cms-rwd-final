@@ -935,10 +935,6 @@ div.jb-idx-thumbnail-show-more {
     text-align: center;
 }
 
-#jb-glry-dlg {
-    z-index: 9999;
-}
-
 @media only screen {
     @-ms-viewport {width: device-width; initial-scale: 1; user-scalable: no;}
 }
