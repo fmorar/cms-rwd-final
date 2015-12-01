@@ -362,6 +362,12 @@ function front_page_productos_field_default_field_instances() {
         'type' => 'link_default',
         'weight' => 3,
       ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
         'settings' => array(),
@@ -420,6 +426,12 @@ function front_page_productos_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 4,
       ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
         'settings' => array(),
@@ -461,6 +473,12 @@ function front_page_productos_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
         'settings' => array(),
@@ -500,6 +518,12 @@ function front_page_productos_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'paragraphs_editor_preview' => array(
@@ -548,6 +572,12 @@ function front_page_productos_field_default_field_instances() {
         ),
         'type' => 'fivestar_formatter_default',
         'weight' => 2,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
