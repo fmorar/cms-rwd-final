@@ -1,0 +1,72 @@
+.basic-info {
+
+	span{
+		display: inline-block;
+		@include font-size(16);
+		margin-bottom: 15px;
+
+		&:nth-child(2) {
+			@include font-size(25);
+			font-weight: bold;
+		}
+	}
+}
+
+.description {
+	margin-top: 20px;
+}
+
+.price {
+	color: $color1;
+	@include font-size(25);
+}
+
+.title {
+	display: none;
+}
+
+.group-header {
+	@include span-columns(12);
+
+	h2, h4 {
+		margin-bottom: 10px;
+		@media (min-width: 800px) {
+			@include shift(6);
+		}
+	}
+	
+	a {
+		color: $color2;
+		text-decoration: underline;
+
+		&:hover {
+			color: $color1;
+		}
+	}
+}
+
+.player {
+	background: $color2;
+	color: $color3;
+	padding: 40px 0;
+
+	iframe {
+		display: block;
+		margin: 0 auto;
+		@include media(min-width 320px max-width 480px, 6) {
+	     @include span-columns(6);
+	   }
+	}
+}
+
+/*
+	**Style for slides products
+*/
+.flex-control-thumbs {
+	margin-top: 30px;
+}
+
+.flex-control-thumbs li {
+	float: none;
+	width: 27.5%;
+}

@@ -1,0 +1,19 @@
+nav li, .menu li {  
+	display: inline-block;
+	
+	a, .nolink{
+		color: $color3;
+		cursor: pointer; 
+		font-weight: normal;
+
+		&.active{
+			color: $color2;
+		}
+	}
+}
+
+.expanded .menu {
+	li {
+		display: none;
+	}
+}

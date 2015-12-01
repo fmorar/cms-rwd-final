@@ -8,6 +8,7 @@ html {
 
 body {
   margin: 0;
+  font-family: $contentFont;
 }
 
 img {
@@ -31,6 +32,7 @@ ul, ol {
 }
 
 p {
+  @include font-size(16);
   overflow: hidden;
 }
 
@@ -44,13 +46,112 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
+  font-family: $titleFont;
+}
+
+h1 {
+  @include font-size(36);
+}
+
+h2 {
+  @include font-size(30);
+}
+
+h3 { 
+  @include font-size(24);
+}
+
+h4 {
+  @include font-size(18);
+}
+
+h5 {
+  @include font-size(12);
+}
+
+h6 {
+  @include font-size(10);
+}
+
+
+footer {
+  background: $color1;
+  clear: both;
+  height: 40px;
+  padding: 10px 20px;
+
+  p {
+    color: $color3;
+    display: inline-block;
+  }
+
+}
+
+.btn {
+  border: 2px solid $color1;
+  color: $color1;
+  cursor: pointer;
+  display: block;
+  @include font-size(12);
+  padding: 10px 15px;
+  text-align: center;
+  width: 130px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $color1;
+    color: $color3;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
+
+.btn-add {
+  font-weight: bold;
+}
+
+.site-logo {
+  display: none;
+}
+
+.site-name { 
+  a {
+    color: $color3;
+  }
+}
+
+.social-network {
+  float: right;
+
+  li{
+    display: inline-block;  
+  }
+}
+
+.face-icon {
+  background: url(../img/face.svg) no-repeat;
+}
+
+.twitter-icon {
+  background: url(../img/twitter.svg) no-repeat;
+}
+
+.twitter-icon, .face-icon {
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 40px;
+  text-indent: -9999px;
+  width: 40px;
 }
 
 // Tablas
 table {
   width: 100%;
   border-collapse: collapse;
-  @include font-size(18);
+  @include font-size(14);
 }
 
 th, td {

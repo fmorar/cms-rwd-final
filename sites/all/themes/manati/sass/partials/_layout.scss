@@ -1,3 +1,30 @@
 //
 // General layout rules
 //
+.max-content {
+	margin: 0 auto;
+	max-width: $max-width !important;
+}
+
+.main {
+	margin: 0 auto;
+	max-width: $max-width !important;
+}
+
+.below-content {
+	div:first-child{
+		margin: 0 auto;
+		max-width: $max-width !important;
+	}
+}
+
+.ds-2col-stacked-fluid > .group-left, .ds-2col-stacked-fluid > .group-right {
+	float: normal;
+	padding-left: 15px;
+	width: 100%;
+
+	@media (min-width: 800px) {
+		float: left;
+    	width: 50%;
+	}
+}

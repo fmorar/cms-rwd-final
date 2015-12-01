@@ -17,7 +17,7 @@
     </div>
   </div>
   <?php endif; ?>
-  <div class="header-content">
+  <div class="header-content max-content">
 
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" class="site-logo" rel="home" id="logo">
@@ -33,7 +33,7 @@
             <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
           </div>
           <?php else: /* Use h1 when the content title is empty */ ?>
-            <h1 id="site-name">
+            <h1 id="site-name" class="site-name">
               <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
             </h1>
           <?php endif; ?>

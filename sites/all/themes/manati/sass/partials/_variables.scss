@@ -2,18 +2,22 @@
 // Variables
 //
 
-// Sprite
-$sprite-image: "../images/global-sprite";
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 // Typography
-
+$titleFont: "Raleway";
+$contentFont: "Open Sans";
 
 // Colors
-
+$color1: crimson; //crimson
+$color2: #292929; //light-blue
+$color3: #fff; //white
+$color4: orange; //orange
 
 // Neat variables
 $max-width: 1200px;
-$grid-colums: 13;
+$grid-colums: 12;
 
 // Breakpoints
 $desktop: 1000px;
