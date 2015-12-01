@@ -1,0 +1,11 @@
+.views-field-field-slide-info {
+	color: $color1;
+	background: rgba(255,255,255, .7);
+	height: 35%;
+	@include font-size(24);
+	margin: 25px 25px 0;
+	padding: 40px 40px;
+	position: absolute;
+	top: 0;
+	width: 25%;
+}

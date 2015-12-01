@@ -218,6 +218,18 @@ nav li, .menu li {
 .expanded .menu li {
   display: none; }
 
+.views-field-field-slide-info {
+  color: crimson;
+  background: rgba(255, 255, 255, 0.7);
+  height: 35%;
+  font-size: 24px;
+  font-size: 2.4rem;
+  margin: 25px 25px 0;
+  padding: 40px 40px;
+  position: absolute;
+  top: 0;
+  width: 25%; }
+
 .ds-1col .entity {
   float: none !important;
   float: left;
@@ -322,7 +334,30 @@ nav li, .menu li {
 
 .flex-control-thumbs li {
   float: none;
-  width: 27.5%; }
+  width: 27.5%;
+  padding: 0 5.5%; }
+
+/*
+	**Styles for hightlight products home
+*/
+th, td {
+  display: inline-block;
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+  margin-right: 0;
+  text-align: center; }
+  th:last-child, td:last-child {
+    margin-right: 0; }
+  @media (min-width: 740px) {
+    th, td {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 23.2317613015%; }
+      th:last-child, td:last-child {
+        margin-right: 0; } }
 
 /*
  * Style for comments

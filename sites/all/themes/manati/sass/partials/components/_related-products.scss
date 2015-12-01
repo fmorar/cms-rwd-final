@@ -1,0 +1,14 @@
+/*
+	**Styles for hightlight products home
+*/
+th, td {
+	display: inline-block;
+	@include span-columns(6);
+	margin-right: 0;
+	text-align: center;
+
+	@media (min-width: 740px) {
+		@include span-columns(3);
+	}
+}
+
