@@ -1,5 +1,5 @@
 /*
- * Style for comments
+ *Style for comments
  */
 
 .comment-wrapper{
@@ -32,7 +32,7 @@
 	}
 }
 
-.comment{
+.comment {
 	background: $color3;
 	border-bottom: 1px solid $color2;
 	padding: 15px 15px;
@@ -45,7 +45,7 @@
 		margin-bottom: 15px;
 	}
 
-	p{ 
+	p { 
 		color: $color1;
 		@include font-size(12);
 	}

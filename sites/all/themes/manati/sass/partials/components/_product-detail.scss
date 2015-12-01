@@ -1,3 +1,7 @@
+/*
+ *Styles for prdouct page detail (product-detail)
+ */
+ 
 .basic-info {
 
 	span{
@@ -45,6 +49,10 @@
 	}
 }
 
+/*
+ *Style for video 
+ */
+
 .player {
 	background: $color2;
 	color: $color3;
@@ -60,8 +68,9 @@
 }
 
 /*
-	**Style for slides products
-*/
+ *Style for slides products
+ */
+
 .flex-control-thumbs {
 	margin-top: 30px;
 }

@@ -73,11 +73,10 @@ h6 {
   @include font-size(10);
 }
 
-
 footer {
   background: $color1;
   clear: both;
-  height: 40px;
+  height: 60px;
   padding: 10px 20px;
 
   p {
@@ -87,7 +86,7 @@ footer {
 
 }
 
-.btn {
+.btn, .form-submit {
   border: 2px solid $color1;
   color: $color1;
   cursor: pointer;
@@ -113,21 +112,38 @@ footer {
   font-weight: bold;
 }
 
-.site-logo {
-  display: none;
+.form-text {
+  border: 1px solid $color3 !important;
+  border-radius: 0 !important;
+  color: $color2 !important;
+  color: $color3;
+  padding: 8px 15px !important;
+  width: 50% !important;
+
+  @media (min-width: 767px) {
+    width: 100px;
+  }
 }
 
-.site-name { 
-  a {
-    color: $color3;
-  }
+.form-submit {
+    background: $color2;
+    border: 1px solid $color3 !important;
+    color: $color3; 
+    display: inline-block;
+    width: 100px !important;
+
+    &:hover {
+      background: $color1;
+      color: $color3;
+    } 
 }
 
 .social-network {
   float: right;
 
   li{
-    display: inline-block;  
+    display: inline-block;
+    margin-left: 10px;  
   }
 }
 
@@ -142,8 +158,11 @@ footer {
 .twitter-icon, .face-icon {
   -webkit-background-size: cover;
   background-size: cover;
+  display: block;
   height: 40px;
-  text-indent: -9999px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
   width: 40px;
 }
 

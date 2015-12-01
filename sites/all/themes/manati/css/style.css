@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 html {
@@ -81,13 +82,13 @@ h6 {
 footer {
   background: crimson;
   clear: both;
-  height: 40px;
+  height: 60px;
   padding: 10px 20px; }
   footer p {
     color: #fff;
     display: inline-block; }
 
-.btn {
+.btn, .form-submit {
   border: 2px solid crimson;
   color: crimson;
   cursor: pointer;
@@ -100,7 +101,7 @@ footer {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  .btn:hover {
+  .btn:hover, .form-submit:hover {
     background: crimson;
     color: #fff;
     -webkit-transition: all 0.3s ease;
@@ -110,16 +111,32 @@ footer {
 .btn-add {
   font-weight: bold; }
 
-.site-logo {
-  display: none; }
+.form-text {
+  border: 1px solid #fff !important;
+  border-radius: 0 !important;
+  color: #292929 !important;
+  color: #fff;
+  padding: 8px 15px !important;
+  width: 50% !important; }
+  @media (min-width: 767px) {
+    .form-text {
+      width: 100px; } }
 
-.site-name a {
-  color: #fff; }
+.form-submit {
+  background: #292929;
+  border: 1px solid #fff !important;
+  color: #fff;
+  display: inline-block;
+  width: 100px !important; }
+  .form-submit:hover {
+    background: crimson;
+    color: #fff; }
 
 .social-network {
   float: right; }
   .social-network li {
-    display: inline-block; }
+    display: inline-block;
+    margin-left: 10px; }
 
 .face-icon {
   background: url(../img/face.svg) no-repeat; }
@@ -130,8 +147,11 @@ footer {
 .twitter-icon, .face-icon {
   -webkit-background-size: cover;
   background-size: cover;
+  display: block;
   height: 40px;
-  text-indent: -9999px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
   width: 40px; }
 
 table {
@@ -170,7 +190,7 @@ th, td {
   margin: 0 auto;
   max-width: 1200px !important; }
 
-.main {
+.main, .nav-main {
   margin: 0 auto;
   max-width: 1200px !important; }
 
@@ -178,6 +198,9 @@ th, td {
   margin: 0 auto;
   max-width: 1200px !important; }
 
+/*
+ *Style for container slide product page and conatiner basic info from product page
+ */
 .ds-2col-stacked-fluid > .group-left, .ds-2col-stacked-fluid > .group-right {
   float: none;
   padding-left: 15px;
@@ -199,15 +222,39 @@ th, td {
   float: right;
   margin-right: 0; }
 
+/*
+ *Styles for header
+ */
 header {
   background: crimson;
-  box-shadow: 0 -4px 20px crimson; }
+  box-shadow: 0 -4px 20px crimson;
+  heigth: auto;
+  padding: 30px 0; }
+  header .social-network {
+    float: right; }
 
 header.field-content {
   position: absolute; }
 
+.block-search {
+  clear: both; }
+
+.site-logo {
+  display: none; }
+
+.site-name {
+  float: left; }
+  .site-name a {
+    color: #fff; }
+
+/*
+ *Styles for navigation / menu
+ */
 nav li, .menu li {
-  display: inline-block; }
+  display: none; }
+  @media (min-width: 740px) {
+    nav li, .menu li {
+      display: inline-block; } }
   nav li a, nav li .nolink, .menu li a, .menu li .nolink {
     color: #fff;
     cursor: pointer;
@@ -215,9 +262,88 @@ nav li, .menu li {
     nav li a.active, nav li .nolink.active, .menu li a.active, .menu li .nolink.active {
       color: #292929; }
 
-.expanded .menu li {
-  display: none; }
+/*
+ *Styles for drop-down from category link
+ */
+.expanded .menu {
+  background: crimson;
+  display: none;
+  padding: 20px 0;
+  z-index: 3;
+  width: 200px; }
+  @media (min-width: 740px) {
+    .expanded .menu {
+      position: absolute; } }
+  .expanded .menu a {
+    padding-left: 15px; }
+  .expanded .menu li {
+    display: block;
+    margin-left: 0;
+    padding: 15px 0;
+    width: 100%; }
+    .expanded .menu li:hover, .expanded .menu li:hover a {
+      background: #fff;
+      color: crimson; }
 
+.expanded .menu.drop-down {
+  display: block; }
+
+/*
+ *MENU COLLAPSE
+ */
+.menu-collapse {
+  overflow: hidden;
+  margin: 5px 10px; }
+
+.menu-toggle {
+  width: 40px;
+  height: 30px;
+  margin-top: 15px;
+  cursor: pointer; }
+  @media (min-width: 740px) {
+    .menu-toggle {
+      display: none; } }
+
+.menu-toggle.on .one {
+  -moz-transform: rotate(45deg) translate(7px, 7px);
+  -ms-transform: rotate(45deg) translate(7px, 7px);
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+  transform: rotate(45deg) translate(7px, 7px); }
+
+.menu-toggle.on .two {
+  opacity: 0; }
+
+.menu-toggle.on .three {
+  -moz-transform: rotate(-45deg) translate(8px, -10px);
+  -ms-transform: rotate(-45deg) translate(8px, -10px);
+  -webkit-transform: rotate(-45deg) translate(8px, -10px);
+  transform: rotate(-45deg) translate(8px, -10px); }
+
+.one,
+.two,
+.three {
+  background: #fff;
+  backface-visibility: hidden;
+  border-radius: 2px;
+  height: 5px;
+  margin: 6px 0;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  width: 100%; }
+
+.extended {
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .extended li {
+    display: block; }
+
+/*
+ *Style for info slider home
+ */
 .views-field-field-slide-info {
   color: crimson;
   background: rgba(255, 255, 255, 0.7);
@@ -230,6 +356,9 @@ nav li, .menu li {
   top: 0;
   width: 25%; }
 
+/*
+ *Styles for categories preview in homepage
+ */
 .ds-1col .entity {
   float: none !important;
   float: left;
@@ -271,6 +400,9 @@ nav li, .menu li {
   display: block;
   margin: 0 auto; }
 
+/*
+ *Styles for prdouct page detail (product-detail)
+ */
 .basic-info span {
   display: inline-block;
   font-size: 16px;
@@ -310,6 +442,9 @@ nav li, .menu li {
     .group-header a:hover {
       color: crimson; }
 
+/*
+ *Style for video 
+ */
 .player {
   background: #292929;
   color: #fff;
@@ -327,8 +462,8 @@ nav li, .menu li {
           margin-right: 0; } }
 
 /*
-	**Style for slides products
-*/
+ *Style for slides products
+ */
 .flex-control-thumbs {
   margin-top: 30px; }
 
@@ -338,7 +473,7 @@ nav li, .menu li {
   padding: 0 5.5%; }
 
 /*
-	**Styles for hightlight products home
+ *Styles for hightlight producßts home and related products from product page
 */
 th, td {
   display: inline-block;
@@ -360,7 +495,7 @@ th, td {
         margin-right: 0; } }
 
 /*
- * Style for comments
+ *Style for comments
  */
 .comment-wrapper {
   padding: 15px 0 0; }

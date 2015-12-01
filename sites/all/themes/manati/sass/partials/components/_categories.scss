@@ -1,4 +1,8 @@
-.ds-1col .entity{
+/*
+ *Styles for categories preview in homepage
+ */
+ 
+.ds-1col .entity {
 	float: none !important;
 	@include span-columns(12);	
 	margin: 0 0 30px !important;

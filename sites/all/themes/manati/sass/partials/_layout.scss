@@ -6,7 +6,7 @@
 	max-width: $max-width !important;
 }
 
-.main {
+.main, .nav-main {
 	margin: 0 auto;
 	max-width: $max-width !important;
 }
@@ -17,6 +17,10 @@
 		max-width: $max-width !important;
 	}
 }
+
+/*
+ *Style for container slide product page and conatiner basic info from product page
+ */
 
 .ds-2col-stacked-fluid > .group-left, .ds-2col-stacked-fluid > .group-right {
 	float: none;

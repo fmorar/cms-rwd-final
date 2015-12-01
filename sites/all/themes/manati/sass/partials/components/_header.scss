@@ -1,11 +1,34 @@
-header{
+/*
+ *Styles for header
+ */
+ 
+header {
 	background: $color1;
 	box-shadow: 0 -4px 20px $color1;
+	heigth: auto;
+	padding: 30px 0;
+
+	.social-network {
+		float: right;
+	}
 }
 
 header.field-content {
 	position: absolute;
 }
 
+.block-search {
+	clear: both;
+}
 
+.site-logo {
+  	display: none;
+}
 
+.site-name { 
+	float: left;
+
+ 	a {
+    	color: $color3;
+  	}
+}
