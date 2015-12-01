@@ -118,13 +118,13 @@ function front_page_productos_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_descripcion'
-  $field_bases['field_descripcion'] = array(
+  // Exported field_base: 'field_description'
+  $field_bases['field_description'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_descripcion',
+    'field_name' => 'field_description',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -134,7 +134,7 @@ function front_page_productos_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(),
     'translatable' => 0,
-    'type' => 'text_with_summary',
+    'type' => 'text_long',
   );
 
   // Exported field_base: 'field_editorial'
@@ -242,41 +242,6 @@ function front_page_productos_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'fivestar',
-  );
-
-  // Exported field_base: 'field_related_products'
-  $field_bases['field_related_products'] = array(
-    'active' => 1,
-    'cardinality' => 3,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_related_products',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'front_page_productos' => 'front_page_productos',
-        ),
-      ),
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_video_book'

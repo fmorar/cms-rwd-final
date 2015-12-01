@@ -1,0 +1,8 @@
+name = related_products
+core = 7.x
+package = ecommerse
+dependencies[] = ctools
+dependencies[] = ds
+features[ctools][] = ds:ds:1
+features[ds_fields][] = related_item
+features[features_api][] = api:2

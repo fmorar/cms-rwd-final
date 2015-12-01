@@ -22,7 +22,7 @@ function views_high_products_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'high-products';
+  $handler->display->display_options['title'] = 'Hightlight Products';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -31,7 +31,8 @@ function views_high_products_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '4';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['style_options']['alignment'] = 'vertical';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -53,7 +54,7 @@ function views_high_products_views_default_views() {
   $handler->display->display_options['fields']['field_images_book']['element_wrapper_class'] = 'reladed-products max-content';
   $handler->display->display_options['fields']['field_images_book']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_images_book']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'thumbnail_retina',
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_images_book']['delta_limit'] = '1';

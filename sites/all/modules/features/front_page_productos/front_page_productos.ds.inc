@@ -17,10 +17,32 @@ function front_page_productos_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'front_page_productos';
   $ds_fieldsetting->view_mode = 'full';
   $ds_fieldsetting->settings = array(
-    'comments' => array(
-      'weight' => '7',
+    'related_item' => array(
+      'weight' => '5',
       'label' => 'hidden',
       'format' => 'default',
+    ),
+    'title' => array(
+      'weight' => '1',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+    'comments' => array(
+      'weight' => '6',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+    'field_gender' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'ow' => TRUE,
+          'ow-el' => 'h4',
+          'ow-cl' => '',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
     ),
   );
   $export['node|front_page_productos|full'] = $ds_fieldsetting;
@@ -38,7 +60,7 @@ function front_page_productos_ds_field_settings_info() {
           'lb-el' => 'p',
           'fi' => TRUE,
           'fi-el' => 'span',
-          'fi-cl' => 'author',
+          'fi-cl' => 'publisher',
           'fi-at' => '',
           'fi-def-at' => FALSE,
           'fi-odd-even' => FALSE,
@@ -74,6 +96,26 @@ function front_page_productos_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_description' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb-el' => 'p',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'description',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'p',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
+        ),
+      ),
+    ),
   );
   $export['paragraphs_item|basic_info_|default'] = $ds_fieldsetting;
 
@@ -92,37 +134,53 @@ function front_page_productos_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'front_page_productos';
   $ds_layout->view_mode = 'full';
-  $ds_layout->layout = 'ds_reset';
+  $ds_layout->layout = 'ds_2col_stacked_fluid';
   $ds_layout->settings = array(
     'regions' => array(
-      'ds_content' => array(
+      'header' => array(
         0 => 'field_gender',
-        1 => 'field_autor_',
+        1 => 'title',
+      ),
+      'left' => array(
         2 => 'field_images_book',
+      ),
+      'right' => array(
         3 => 'field_base_info',
-        4 => 'field_descripcion',
-        5 => 'field_video_book',
+      ),
+      'footer' => array(
+        4 => 'field_video_book',
+        5 => 'related_item',
         6 => 'comments',
+        7 => 'field_related_products',
       ),
     ),
     'fields' => array(
-      'field_gender' => 'ds_content',
-      'field_autor_' => 'ds_content',
-      'field_images_book' => 'ds_content',
-      'field_base_info' => 'ds_content',
-      'field_descripcion' => 'ds_content',
-      'field_video_book' => 'ds_content',
-      'comments' => 'ds_content',
+      'field_gender' => 'header',
+      'title' => 'header',
+      'field_images_book' => 'left',
+      'field_base_info' => 'right',
+      'field_video_book' => 'footer',
+      'related_item' => 'footer',
+      'comments' => 'footer',
+      'field_related_products' => 'footer',
     ),
-    'classes' => array(),
+    'classes' => array(
+      'layout_class' => array(
+        '' => '',
+      ),
+    ),
     'wrappers' => array(
-      'ds_content' => 'div',
+      'header' => 'div',
+      'left' => 'div',
+      'right' => 'div',
+      'footer' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
-    'layout_attributes_merge' => TRUE,
-    'layout_link_attribute' => FALSE,
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|front_page_productos|full'] = $ds_layout;
 
@@ -136,21 +194,23 @@ function front_page_productos_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_editorial',
-        1 => 'field_precio_',
-        2 => 'field_add_to_cart',
-        3 => 'field_rating',
+        0 => 'field_precio_',
+        1 => 'field_editorial',
+        2 => 'field_rating',
+        3 => 'field_add_to_cart',
+        4 => 'field_description',
       ),
     ),
     'fields' => array(
-      'field_editorial' => 'ds_content',
       'field_precio_' => 'ds_content',
-      'field_add_to_cart' => 'ds_content',
+      'field_editorial' => 'ds_content',
       'field_rating' => 'ds_content',
+      'field_add_to_cart' => 'ds_content',
+      'field_description' => 'ds_content',
     ),
     'classes' => array(
       'layout_class' => array(
-        '' => '',
+        'basic-info' => 'basic-info',
       ),
     ),
     'wrappers' => array(

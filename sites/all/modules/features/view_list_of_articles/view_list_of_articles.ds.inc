@@ -196,6 +196,9 @@ function view_list_of_articles_ds_layout_settings_info() {
       'layout_class' => array(
         '' => '',
       ),
+      'ds_content' => array(
+        'category' => 'category',
+      ),
     ),
     'wrappers' => array(
       'ds_content' => 'div',

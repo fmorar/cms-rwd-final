@@ -17,9 +17,12 @@ function views_flex_slider_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'slide_home';
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
-    'field_image' => array(
+    'field_slide_info' => array(
       'formatter_settings' => array(
-        'ft' => array(),
+        'ft' => array(
+          'lb-el' => 'div',
+          'lb-cl' => 'slide-info',
+        ),
       ),
     ),
   );
@@ -45,12 +48,18 @@ function views_flex_slider_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_image',
+        1 => 'field_slide_info',
       ),
     ),
     'fields' => array(
       'field_image' => 'ds_content',
+      'field_slide_info' => 'ds_content',
     ),
-    'classes' => array(),
+    'classes' => array(
+      'layout_class' => array(
+        '' => '',
+      ),
+    ),
     'wrappers' => array(
       'ds_content' => 'div',
     ),

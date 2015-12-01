@@ -28,7 +28,7 @@ function front_page_productos_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -76,10 +76,9 @@ function front_page_productos_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
+        'type' => 'hidden',
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -162,55 +161,6 @@ function front_page_productos_field_default_field_instances() {
       'settings' => array(),
       'type' => 'paragraphs_embed',
       'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance: 'node-front_page_productos-field_descripcion'
-  $field_instances['node-front_page_productos-field_descripcion'] = array(
-    'bundle' => 'front_page_productos',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 3,
-      ),
-      'full' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_descripcion',
-    'label' => 'descripcion',
-    'required' => 1,
-    'settings' => array(
-      'display_summary' => 0,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 7,
     ),
   );
 
@@ -297,30 +247,13 @@ function front_page_productos_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'juicebox',
+        'module' => 'flexslider_fields',
         'settings' => array(
-          'apply_markup_filter' => 1,
-          'caption_source' => '',
-          'custom_parent_classes' => '',
-          'image_style' => 'large',
-          'incompatible_file_action' => 'show_icon_and_link',
-          'jlib_backgroundColor' => '#ffffff',
-          'jlib_galleryHeight' => '500px',
-          'jlib_galleryWidth' => '50%',
-          'jlib_showExpandButton' => 1,
-          'jlib_showOpenButton' => 1,
-          'jlib_showThumbsButton' => 1,
-          'jlib_textColor' => 'rgba(255,255,255,1)',
-          'jlib_thumbFrameColor' => 'rgba(255,255,255,.5)',
-          'jlib_useFullscreenExpand' => 0,
-          'jlib_useThumbDots' => 0,
-          'linkurl_source' => '',
-          'linkurl_target' => '_blank',
-          'manual_config' => '',
-          'thumb_style' => 'juicebox_square_thumbnail',
-          'title_source' => '',
+          'caption' => 0,
+          'image_style' => 'flexslider_thumbnail',
+          'optionset' => 'slide_product',
         ),
-        'type' => 'juicebox_formatter',
+        'type' => 'flexslider',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -357,53 +290,6 @@ function front_page_productos_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-front_page_productos-field_related_products'
-  $field_instances['node-front_page_productos-field_related_products'] = array(
-    'bundle' => 'front_page_productos',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 7,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_related_products',
-    'label' => 'related-products',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 10,
-    ),
-  );
-
   // Exported field_instance: 'node-front_page_productos-field_video_book'
   $field_instances['node-front_page_productos-field_video_book'] = array(
     'bundle' => 'front_page_productos',
@@ -431,7 +317,7 @@ function front_page_productos_field_default_field_instances() {
           'video_style' => 'normal',
         ),
         'type' => 'video_embed_field',
-        'weight' => 6,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -474,7 +360,7 @@ function front_page_productos_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -520,6 +406,47 @@ function front_page_productos_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'paragraphs_item-basic_info_-field_description'
+  $field_instances['paragraphs_item-basic_info_-field_description'] = array(
+    'bundle' => 'basic_info_',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_description',
+    'label' => 'Description',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'paragraphs_item-basic_info_-field_editorial'
   $field_instances['paragraphs_item-basic_info_-field_editorial'] = array(
     'bundle' => 'basic_info_',
@@ -532,7 +459,7 @@ function front_page_productos_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -541,9 +468,10 @@ function front_page_productos_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_editorial',
-    'label' => 'Publisher:',
+    'label' => 'Publisher',
     'required' => 1,
     'settings' => array(
       'text_processing' => 0,
@@ -572,7 +500,7 @@ function front_page_productos_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -619,7 +547,7 @@ function front_page_productos_field_default_field_instances() {
           ),
         ),
         'type' => 'fivestar_formatter_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -702,16 +630,15 @@ function front_page_productos_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Add to cart');
   t('Body');
+  t('Description');
   t('Price');
-  t('Publisher:');
+  t('Publisher');
   t('autor ');
   t('base-info');
   t('cover-book');
-  t('descripcion');
   t('gender');
   t('images-book');
   t('rating');
-  t('related-products');
   t('video-book');
 
   return $field_instances;
