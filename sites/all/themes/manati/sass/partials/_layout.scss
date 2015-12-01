@@ -19,12 +19,21 @@
 }
 
 .ds-2col-stacked-fluid > .group-left, .ds-2col-stacked-fluid > .group-right {
-	float: normal;
+	float: none;
 	padding-left: 15px;
 	width: 100%;
 
 	@media (min-width: 800px) {
-		float: left;
-    	width: 50%;
+		margin-right: 0;
+	   	@include span-columns(6)
 	}
+}
+
+.ds-2col-stacked-fluid > .group-left {
+	float: left;
+}
+
+.ds-2col-stacked-fluid > .group-right {
+	float: right;
+	margin-right: 0;
 }
