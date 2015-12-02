@@ -195,7 +195,7 @@ th, td {
  */
 .ds-2col-stacked-fluid > .group-left, .ds-2col-stacked-fluid > .group-right {
   float: none;
-  padding-left: 15px;
+  padding: 0 5px;
   width: 100%; }
   @media (min-width: 800px) {
     .ds-2col-stacked-fluid > .group-left, .ds-2col-stacked-fluid > .group-right {
