@@ -572,7 +572,8 @@ th, td {
 .username {
   font-size: 12px;
   font-size: 1.2rem;
-  float: left; }
+  float: left;
+  margin-bottom: 0; }
 
 .img-perfil {
   float: left;
@@ -593,6 +594,9 @@ th, td {
 .latest-comment .comment {
   background: #292929;
   color: #fff; }
+
+.latest-comment span:first-child {
+  margin-bottom: 0; }
 
 label,
 .webform-container-inline label {

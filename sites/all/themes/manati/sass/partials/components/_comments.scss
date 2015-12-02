@@ -65,6 +65,7 @@
 .username {
 	@include font-size(12);
 	float: left;
+	margin-bottom: 0;
 }
 
 .img-perfil {
@@ -90,6 +91,10 @@
 	.comment {
 		background: $color2;
 		color: $color3;
+	}
+
+	span:first-child {
+		margin-bottom: 0;
 	}
 }
 
