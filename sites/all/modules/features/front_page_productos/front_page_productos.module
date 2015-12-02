@@ -10,5 +10,13 @@ include_once 'front_page_productos.features.inc';
  * Implements hook_votingapi_insert().
  */
 function front_page_productos_votingapi_insert($votes) {
-    dpm($votes);
+  $vote = array_shift($votes);
+  if ($vote['entity_type'] === 'node') {
+    $node_wrapper = entity_metadata_wrapper('node', $vote['entity_id']);
+    $paragraph_items_ids = $node_wrapper->field_base_info->raw();
+    unset($vote['vote_id']);
+    $vote['entity_type'] = 'paragraphs_item';
+    $vote['entity_id'] = array_shift($paragraph_items_ids);
+    votingapi_set_votes(array($vote));
+  }
 }
