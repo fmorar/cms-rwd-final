@@ -560,17 +560,15 @@ th, td {
     font-size: 12px;
     font-size: 1.2rem;
     margin: 15px 0; }
+  .comment .fivestar-user-stars {
+    margin-left: 69px; }
+  .comment .permalink {
+    color: crimson; }
 
 .permalink {
   color: crimson;
   font-size: 16px;
   font-size: 1.6rem; }
-
-.username {
-  display: block; }
-
-.fivestar-user-stars {
-  margin-left: 69px; }
 
 .img-perfil {
   border-radius: 50%;
@@ -601,10 +599,8 @@ th, td {
     font-size: 1.2rem;
     margin: 0 0; }
 
-.latest-comment .submitted a {
-  color: #bbb;
-  font-size: 12px;
-  font-size: 1.2rem; }
+.latest-comment .username {
+  display: block; }
 
 label,
 .webform-container-inline label {

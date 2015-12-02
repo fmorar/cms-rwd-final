@@ -52,20 +52,20 @@
 		@include font-size(12);
 		margin: 15px 0;
 	}
-}
-	
-	.permalink {
-		color: $color1;
-		@include font-size(16);
-	}
 
-	.username {
-		display: block;
-	}
-	
 	.fivestar-user-stars {
 		margin-left: 69px;
 	}
+
+	.permalink {
+		color: $color1;
+	}
+}
+	
+.permalink {
+	color: $color1;
+	@include font-size(16);
+}
 
 .img-perfil {
 	border-radius: 50%;
@@ -100,12 +100,9 @@
 			margin: 0 0;
 		}
 	}
-
-	.submitted {
-		a {
-			color: $color4;
-			@include font-size(12);
-		}
+	
+	.username {
+		display: block;
 	}
 }
 
