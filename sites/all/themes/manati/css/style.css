@@ -565,13 +565,15 @@ th, td {
   .comment .permalink {
     color: crimson; }
 
+.fivestar-static-item .form-type-item .description {
+  display: none; }
+
 .permalink {
   color: crimson;
   font-size: 16px;
   font-size: 1.6rem; }
 
 .img-perfil {
-  border-radius: 50%;
   float: left;
   margin-right: 15px;
   width: 55px; }

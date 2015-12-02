@@ -61,6 +61,10 @@
 		color: $color1;
 	}
 }
+
+.fivestar-static-item .form-type-item .description {
+	display: none;
+}
 	
 .permalink {
 	color: $color1;
@@ -68,7 +72,6 @@
 }
 
 .img-perfil {
-	border-radius: 50%;
 	float: left;
 	margin-right: 15px;
 	width: 55px;
