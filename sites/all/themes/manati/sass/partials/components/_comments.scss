@@ -2,7 +2,7 @@
  *Style for comments
  */
 
-.comment-wrapper{
+.comment-wrapper {
 	background: $color2;
 	padding: 15px 0 0;
 
@@ -50,6 +50,7 @@
 
 	.permalink {
 		color: $color1;
+		@include font-size(16);
 	}
 }
 

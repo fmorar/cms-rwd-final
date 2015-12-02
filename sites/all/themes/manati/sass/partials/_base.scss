@@ -17,17 +17,22 @@ img {
   height: auto;
 }
 
-p, li {
+p, 
+li {
   @include font-size(14);
   color: #555;
   line-height: 1.5;
 }
 
-p, ul, ol, dl {
+p, 
+ul, 
+ol, 
+dl {
   margin: 0 0 0.5em 0;
 }
 
-ul, ol {
+ul, 
+ol {
   padding-left: 2em;
 }
 
@@ -44,7 +49,12 @@ a:hover {
   text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
   margin-top: 0;
   font-family: $titleFont;
 }
@@ -86,7 +96,8 @@ footer {
 
 }
 
-.btn, .form-submit {
+.btn, 
+.form-submit {
   border: 2px solid $color1;
   color: $color1;
   cursor: pointer;
@@ -131,6 +142,7 @@ footer {
   } 
 }
 
+//btn social network
 .social-network {
   float: right;
 
@@ -152,11 +164,11 @@ footer {
   -webkit-background-size: cover;
   background-size: cover;
   display: block;
-  height: 40px;
+  height: 30px;
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  width: 40px;
+  width: 30px;
 }
 
 // Tablas
