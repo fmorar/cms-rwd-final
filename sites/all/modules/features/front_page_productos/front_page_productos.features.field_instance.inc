@@ -249,7 +249,7 @@ function front_page_productos_field_default_field_instances() {
         'module' => 'flexslider_fields',
         'settings' => array(
           'caption' => 0,
-          'image_style' => 'flexslider_thumbnail',
+          'image_style' => 'img-slider',
           'optionset' => 'slide_product',
         ),
         'type' => 'flexslider',
@@ -613,50 +613,6 @@ function front_page_productos_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-categorias-field_cover_book'
-  $field_instances['taxonomy_term-categorias-field_cover_book'] = array(
-    'bundle' => 'categorias',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => 'thumbnail',
-        ),
-        'type' => 'image',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_cover_book',
-    'label' => 'cover-book',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'image',
-      'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 31,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Add to cart');
@@ -666,7 +622,6 @@ function front_page_productos_field_default_field_instances() {
   t('Publisher');
   t('autor ');
   t('base-info');
-  t('cover-book');
   t('gender');
   t('images-book');
   t('rating-star');
