@@ -60,9 +60,20 @@ function front_page_productos_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'hightlight_comments' => array(
-      'weight' => '4',
+      'weight' => '5',
       'label' => 'hidden',
       'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'fi' => TRUE,
+          'fi-el' => 'div',
+          'fi-cl' => 'latest-comment',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
+        ),
+      ),
     ),
     'field_editorial' => array(
       'formatter_settings' => array(
@@ -199,8 +210,8 @@ function front_page_productos_ds_layout_settings_info() {
         1 => 'field_editorial',
         2 => 'field_rating_star',
         3 => 'field_add_to_cart',
-        4 => 'hightlight_comments',
-        5 => 'field_description',
+        4 => 'field_description',
+        5 => 'hightlight_comments',
       ),
     ),
     'fields' => array(
@@ -208,8 +219,8 @@ function front_page_productos_ds_layout_settings_info() {
       'field_editorial' => 'ds_content',
       'field_rating_star' => 'ds_content',
       'field_add_to_cart' => 'ds_content',
-      'hightlight_comments' => 'ds_content',
       'field_description' => 'ds_content',
+      'hightlight_comments' => 'ds_content',
     ),
     'classes' => array(
       'layout_class' => array(
