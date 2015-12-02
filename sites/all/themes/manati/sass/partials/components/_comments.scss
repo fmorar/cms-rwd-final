@@ -53,6 +53,7 @@
 	}
 
 	.username {
+		@include font-size(12);
 		float: left;
 	}
 }
@@ -80,7 +81,7 @@
 	a {
 		color: $color4;
 	}
-	
+
 	h2 {
 		@include font-size(20);
 		margin: 15px 0 10px;
