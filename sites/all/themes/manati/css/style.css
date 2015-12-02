@@ -560,10 +560,6 @@ th, td {
     margin-left: 69px; }
   .comment .permalink {
     color: crimson; }
-  .comment .username {
-    font-size: 12px;
-    font-size: 1.2rem;
-    float: left; }
 
 .fivestar-static-item .form-type-item .description {
   display: none; }
@@ -572,6 +568,11 @@ th, td {
   color: crimson;
   font-size: 16px;
   font-size: 1.6rem; }
+
+.username {
+  font-size: 12px;
+  font-size: 1.2rem;
+  float: left; }
 
 .img-perfil {
   float: left;

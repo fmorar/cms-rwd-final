@@ -51,11 +51,6 @@
 	.permalink {
 		color: $color1;
 	}
-
-	.username {
-		@include font-size(12);
-		float: left;
-	}
 }
 
 .fivestar-static-item .form-type-item .description {
@@ -65,6 +60,11 @@
 .permalink {
 	color: $color1;
 	@include font-size(16);
+}
+
+.username {
+	@include font-size(12);
+	float: left;
 }
 
 .img-perfil {
