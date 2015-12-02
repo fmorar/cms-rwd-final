@@ -125,10 +125,12 @@ function view_list_of_articles_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_category',
+        0 => 'title',
+        1 => 'field_category',
       ),
     ),
     'fields' => array(
+      'title' => 'ds_content',
       'field_category' => 'ds_content',
     ),
     'classes' => array(
