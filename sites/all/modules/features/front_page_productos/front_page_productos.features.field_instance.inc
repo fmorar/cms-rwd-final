@@ -369,9 +369,10 @@ function front_page_productos_field_default_field_instances() {
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'link_default',
+        'weight' => 1,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -423,7 +424,7 @@ function front_page_productos_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'above',
@@ -433,9 +434,10 @@ function front_page_productos_field_default_field_instances() {
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 4,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -480,8 +482,9 @@ function front_page_productos_field_default_field_instances() {
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'text_default',
         'weight' => 0,
       ),
     ),
@@ -527,9 +530,10 @@ function front_page_productos_field_default_field_instances() {
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'paragraphs_item',
@@ -551,18 +555,32 @@ function front_page_productos_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'paragraphs_item-basic_info_-field_rating'
-  $field_instances['paragraphs_item-basic_info_-field_rating'] = array(
+  // Exported field_instance: 'paragraphs_item-basic_info_-field_rating_star'
+  $field_instances['paragraphs_item-basic_info_-field_rating_star'] = array(
     'bundle' => 'basic_info_',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'fivestar',
         'settings' => array(
-          'expose' => TRUE,
+          'expose' => 1,
+          'style' => 'average',
+          'text' => 'average',
+          'widget' => array(
+            'fivestar_widget' => 'sites/all/modules/contrib/fivestar/widgets/outline/outline.css',
+          ),
+        ),
+        'type' => 'fivestar_formatter_default',
+        'weight' => 2,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'module' => 'fivestar',
+        'settings' => array(
+          'expose' => 1,
           'style' => 'average',
           'text' => 'average',
           'widget' => array(
@@ -570,29 +588,17 @@ function front_page_productos_field_default_field_instances() {
           ),
         ),
         'type' => 'fivestar_formatter_default',
-        'weight' => 2,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 3,
       ),
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_rating',
-    'label' => 'rating',
+    'field_name' => 'field_rating_star',
+    'label' => 'rating-star',
     'required' => 0,
     'settings' => array(
       'allow_clear' => 0,
-      'allow_ownvote' => 0,
+      'allow_ownvote' => 1,
       'allow_revote' => 0,
       'stars' => 5,
       'target' => 'none',
@@ -601,12 +607,8 @@ function front_page_productos_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'fivestar',
-      'settings' => array(
-        'widget' => array(
-          'fivestar_widget' => 'default',
-        ),
-      ),
-      'type' => 'stars',
+      'settings' => array(),
+      'type' => 'exposed',
       'weight' => 2,
     ),
   );
@@ -667,7 +669,7 @@ function front_page_productos_field_default_field_instances() {
   t('cover-book');
   t('gender');
   t('images-book');
-  t('rating');
+  t('rating-star');
   t('video-book');
 
   return $field_instances;

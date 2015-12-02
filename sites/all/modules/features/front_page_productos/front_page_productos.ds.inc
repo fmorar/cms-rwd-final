@@ -59,6 +59,11 @@ function front_page_productos_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'basic_info_';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
+    'hightlight_comments' => array(
+      'weight' => '4',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
     'field_editorial' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -91,13 +96,6 @@ function front_page_productos_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'lb-cl' => 'btn btn-add',
-        ),
-      ),
-    ),
-    'field_rating' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb-cl' => 'stars-ranking',
         ),
       ),
     ),
@@ -199,16 +197,18 @@ function front_page_productos_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'field_precio_',
         1 => 'field_editorial',
-        2 => 'field_rating',
+        2 => 'field_rating_star',
         3 => 'field_add_to_cart',
-        4 => 'field_description',
+        4 => 'hightlight_comments',
+        5 => 'field_description',
       ),
     ),
     'fields' => array(
       'field_precio_' => 'ds_content',
       'field_editorial' => 'ds_content',
-      'field_rating' => 'ds_content',
+      'field_rating_star' => 'ds_content',
       'field_add_to_cart' => 'ds_content',
+      'hightlight_comments' => 'ds_content',
       'field_description' => 'ds_content',
     ),
     'classes' => array(
