@@ -9,11 +9,6 @@
 	a {
 		color: $color4;
 	}
-
-	h3 a {
-		color: $color1;
-		margin: 0 0 15px 0;
-	}
 	
 	@media (min-width: 740px) {	
 		color: $color1;
@@ -42,16 +37,11 @@
 	float: none !important;
 	padding: 15px 15px;
 
-
-	h3 {
-		margin-bottom: 15px;
-	}
-
 	p { 
 		display: inline-block;
 		color: $color3;
 		@include font-size(12);
-		margin: -1px 0 0 25px;
+		margin: 0 0 0 25px;
 	}
 
 	.fivestar-user-stars {
@@ -60,6 +50,10 @@
 
 	.permalink {
 		color: $color1;
+	}
+
+	.username {
+		float: left;
 	}
 }
 
@@ -83,15 +77,13 @@
  */
 
 .latest-comment {
+	a {
+		color: $color4;
+	}
+	
 	h2 {
 		@include font-size(20);
 		margin: 15px 0 10px;
-	}
-	
-	h3 a{
-		@include font-size(24);
-		color: $color1;
-		margin: 0 0 15px 0;
 	}
 
 	.comment {
