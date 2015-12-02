@@ -11,6 +11,19 @@ header {
 	.social-network {
 		float: right;
 	}
+
+	.form-text {
+	  border: 1px solid $color3 !important;
+	  border-radius: 0 !important;
+	  color: $color2 !important;
+	  color: $color3;
+	  padding: 8px 15px !important;
+	  width: 50% !important;
+
+	  @media (min-width: 767px) {
+	    width: 100px;
+	  }
+	}
 }
 
 header.field-content {

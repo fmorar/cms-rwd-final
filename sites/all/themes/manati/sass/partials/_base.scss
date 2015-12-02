@@ -112,30 +112,23 @@ footer {
   font-weight: bold;
 }
 
-.form-text {
-  border: 1px solid $color3 !important;
-  border-radius: 0 !important;
-  color: $color2 !important;
-  color: $color3;
-  padding: 8px 15px !important;
-  width: 50% !important;
-
-  @media (min-width: 767px) {
-    width: 100px;
+.comment-form {
+  label, .username {
+    color: $color3;
   }
 }
 
 .form-submit {
-    background: $color2;
-    border: 1px solid $color3 !important;
-    color: $color3; 
-    display: inline-block;
-    width: 100px !important;
+  background: $color2;
+  border: 1px solid $color3 !important;
+  color: $color3; 
+  display: inline-block;
+  width: 100px !important;
 
-    &:hover {
-      background: $color1;
-      color: $color3;
-    } 
+  &:hover {
+    background: $color1;
+    color: $color3;
+  } 
 }
 
 .social-network {

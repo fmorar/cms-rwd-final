@@ -28,7 +28,7 @@
 	width: 100%;
 
 	@media (min-width: 800px) {
-		margin-right: 0;
+		margin: 0 0 30px;
 	   	@include span-columns(6)
 	}
 }
