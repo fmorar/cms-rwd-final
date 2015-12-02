@@ -564,6 +564,9 @@ th, td {
 .fivestar-static-item .form-type-item .description {
   display: none; }
 
+.fivestar-user-text span {
+  margin-bottom: 0; }
+
 .permalink {
   color: crimson;
   font-size: 16px;
@@ -595,7 +598,7 @@ th, td {
   background: #292929;
   color: #fff; }
 
-.latest-comment span:first-child {
+.latest-comment span {
   margin-bottom: 0; }
 
 label,
