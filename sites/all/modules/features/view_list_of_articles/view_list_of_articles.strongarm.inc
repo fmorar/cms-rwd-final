@@ -93,10 +93,10 @@ function view_list_of_articles_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '1',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '2',
+          'weight' => '30',
         ),
       ),
       'display' => array(),
