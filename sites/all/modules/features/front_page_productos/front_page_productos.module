@@ -7,8 +7,8 @@
 include_once 'front_page_productos.features.inc';
 
 /**
- * implemets hook_votingapi_storage_add_vote().
+ * implemets hook_votingapi_insert().
  */
-function front_page_productos_votingapi_storage_add_vote(&$vote) {
-    dpm($vote);
+function front_page_productos_votingapi_insert(&$votes) {
+    dpm($votes);
   }
