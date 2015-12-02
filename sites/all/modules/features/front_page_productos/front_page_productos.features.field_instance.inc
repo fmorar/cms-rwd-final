@@ -555,58 +555,6 @@ function front_page_productos_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'paragraphs_item-basic_info_-field_rating'
-  $field_instances['paragraphs_item-basic_info_-field_rating'] = array(
-    'bundle' => 'basic_info_',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 6,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_rating',
-    'label' => 'rating',
-    'required' => 0,
-    'settings' => array(
-      'allow_clear' => 0,
-      'allow_ownvote' => 0,
-      'allow_revote' => 0,
-      'stars' => 5,
-      'target' => 'none',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'fivestar',
-      'settings' => array(
-        'widget' => array(
-          'fivestar_widget' => 'default',
-        ),
-      ),
-      'type' => 'stars',
-      'weight' => 2,
-    ),
-  );
-
   // Exported field_instance: 'paragraphs_item-basic_info_-field_rating_star'
   $field_instances['paragraphs_item-basic_info_-field_rating_star'] = array(
     'bundle' => 'basic_info_',
@@ -721,7 +669,6 @@ function front_page_productos_field_default_field_instances() {
   t('cover-book');
   t('gender');
   t('images-book');
-  t('rating');
   t('rating-star');
   t('video-book');
 

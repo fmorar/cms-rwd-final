@@ -51,7 +51,6 @@ features[field_instance][] = paragraphs_item-basic_info_-field_add_to_cart
 features[field_instance][] = paragraphs_item-basic_info_-field_description
 features[field_instance][] = paragraphs_item-basic_info_-field_editorial
 features[field_instance][] = paragraphs_item-basic_info_-field_precio_
-features[field_instance][] = paragraphs_item-basic_info_-field_rating
 features[field_instance][] = paragraphs_item-basic_info_-field_rating_star
 features[field_instance][] = taxonomy_term-categorias-field_cover_book
 features[filter][] = filtered_html
