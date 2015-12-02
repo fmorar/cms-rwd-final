@@ -48,9 +48,10 @@
 	}
 
 	p { 
+		display: inline-block;
 		color: $color3;
 		@include font-size(12);
-		margin: 15px 0;
+		margin: -1px 0 0 25px;
 	}
 
 	.fivestar-user-stars {
@@ -96,12 +97,6 @@
 	.comment {
 		background: $color2;
 		color: $color3;
-
-		span, p { 
-			color: $color3;
-			@include font-size(12);
-			margin: 0 0;
-		}
 	}
 }
 
