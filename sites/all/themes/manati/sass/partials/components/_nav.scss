@@ -20,7 +20,21 @@ nav li, .menu li {
 	}
 }
 
+/*
+ *Styles for log in menu and user menu
+ */
 
+#block-menu-menu-log-in .menu ,
+#block-system-user-menu .menu {
+	float: right;
+	margin-top: 8px;
+
+	li {
+		display: block;
+		float: right;	
+	}
+	
+}
 
 /*
  *Styles for drop-down from category link

@@ -53,19 +53,6 @@
 	}
 }
 
-.fivestar-static-item .form-type-item .description {
-	display: none;
-}
-
-.fivestar-user-text span {
-	margin-bottom: 0;
-}
-	
-.permalink {
-	color: $color1;
-	@include font-size(16);
-}
-
 .username {
 	@include font-size(12);
 	float: left;
@@ -102,6 +89,17 @@
 	}
 }
 
+/*
+ *Style for fivestar comments
+ */
+
+.fivestar-static-item .form-type-item .description {
+	display: none;
+}
+
+.fivestar-user-text span {
+	margin-bottom: 0;
+}
 
 
 

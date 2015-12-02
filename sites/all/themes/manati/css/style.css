@@ -265,6 +265,18 @@ nav li, .menu li {
       color: #292929; }
 
 /*
+ *Styles for log in menu and user menu
+ */
+#block-menu-menu-log-in .menu,
+#block-system-user-menu .menu {
+  float: right;
+  margin-top: 8px; }
+  #block-menu-menu-log-in .menu li,
+  #block-system-user-menu .menu li {
+    display: block;
+    float: right; }
+
+/*
  *Styles for drop-down from category link
  */
 .expanded .menu {
@@ -561,17 +573,6 @@ th, td {
   .comment .permalink {
     color: crimson; }
 
-.fivestar-static-item .form-type-item .description {
-  display: none; }
-
-.fivestar-user-text span {
-  margin-bottom: 0; }
-
-.permalink {
-  color: crimson;
-  font-size: 16px;
-  font-size: 1.6rem; }
-
 .username {
   font-size: 12px;
   font-size: 1.2rem;
@@ -599,6 +600,15 @@ th, td {
   color: #fff; }
 
 .latest-comment span {
+  margin-bottom: 0; }
+
+/*
+ *Style for fivestar comments
+ */
+.fivestar-static-item .form-type-item .description {
+  display: none; }
+
+.fivestar-user-text span {
   margin-bottom: 0; }
 
 label,
