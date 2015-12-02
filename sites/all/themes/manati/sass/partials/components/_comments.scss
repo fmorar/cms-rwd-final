@@ -53,6 +53,19 @@
 		margin: 15px 0;
 	}
 }
+	
+	.permalink {
+		color: $color1;
+		@include font-size(16);
+	}
+
+	.username {
+		display: block;
+	}
+	
+	.fivestar-user-stars {
+		margin-left: 69px;
+	}
 
 .img-perfil {
 	border-radius: 50%;

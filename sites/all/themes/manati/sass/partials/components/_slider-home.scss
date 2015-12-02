@@ -4,12 +4,26 @@
 
 .views-field-field-slide-info {
 	color: $color1;
-	background: rgba(255,255,255, .7);
-	height: 35%;
-	@include font-size(24);
-	margin: 25px 25px 0;
-	padding: 40px 40px;
+	background: rgba(255,255,255, .8);
+	bottom: 0;
+	height: 45%;
+	@include font-size(16);
+	padding: 6px 10px;
 	position: absolute;
-	top: 0;
-	width: 25%;
+	width: 65%;
+
+	@media (min-width: 600px) {
+		@include font-size(20);
+		padding: 25px 25px;
+	}
+	
+	@media (min-width: 720px) {
+		@include font-size(24);
+		padding: 60px 60px;
+		width: 45%;
+	}
+
+	@media (min-width: 900px) {
+		@include font-size(34);
+	}
 }

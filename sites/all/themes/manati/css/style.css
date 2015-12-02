@@ -348,15 +348,29 @@ nav li, .menu li {
  */
 .views-field-field-slide-info {
   color: crimson;
-  background: rgba(255, 255, 255, 0.7);
-  height: 35%;
-  font-size: 24px;
-  font-size: 2.4rem;
-  margin: 25px 25px 0;
-  padding: 40px 40px;
+  background: rgba(255, 255, 255, 0.8);
+  bottom: 0;
+  height: 45%;
+  font-size: 16px;
+  font-size: 1.6rem;
+  padding: 6px 10px;
   position: absolute;
-  top: 0;
-  width: 25%; }
+  width: 65%; }
+  @media (min-width: 600px) {
+    .views-field-field-slide-info {
+      font-size: 20px;
+      font-size: 2rem;
+      padding: 25px 25px; } }
+  @media (min-width: 720px) {
+    .views-field-field-slide-info {
+      font-size: 24px;
+      font-size: 2.4rem;
+      padding: 60px 60px;
+      width: 45%; } }
+  @media (min-width: 900px) {
+    .views-field-field-slide-info {
+      font-size: 34px;
+      font-size: 3.4rem; } }
 
 /*
  *Styles for categories preview in homepage
@@ -546,6 +560,17 @@ th, td {
     font-size: 12px;
     font-size: 1.2rem;
     margin: 15px 0; }
+
+.permalink {
+  color: crimson;
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+.username {
+  display: block; }
+
+.fivestar-user-stars {
+  margin-left: 69px; }
 
 .img-perfil {
   border-radius: 50%;
